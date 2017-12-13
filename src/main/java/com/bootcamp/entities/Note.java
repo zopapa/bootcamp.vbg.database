@@ -15,7 +15,7 @@ import javax.persistence.Id;
  * Created by Archange on 04/12/2017.
  */
 @Entity
-@ApiModel(value = "Note", description = "Note of Descripition")
+@ApiModel(value = "Note", description = "Descripition of the Note")
 public class Note implements Serializable {
 
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
@@ -41,6 +41,8 @@ public class Note implements Serializable {
     @Column(nullable = false)
     private long dateMiseAJour;
 
+
+
     public int getId() {
         return id;
     }
@@ -49,13 +51,12 @@ public class Note implements Serializable {
         this.id = id;
     }
 
-
-    public int getEntityId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setEntityId(int entityId) {
-        this.userId = entityId;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getNoteType() {
@@ -68,7 +69,6 @@ public class Note implements Serializable {
 
     public long getDateCreation() {
         return dateCreation;
-
     }
 
     public void setDateCreation(long dateCreation) {
@@ -82,5 +82,6 @@ public class Note implements Serializable {
     public void setDateMiseAJour(long dateMiseAJour) {
         this.dateMiseAJour = dateMiseAJour;
     }
+
 
 }
