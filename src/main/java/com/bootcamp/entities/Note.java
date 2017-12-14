@@ -20,7 +20,7 @@ public class Note implements Serializable {
 
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(nullable = false)
@@ -31,12 +31,12 @@ public class Note implements Serializable {
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     private String noteType;
 
-    @ApiModelProperty(value = "creation date of Axe")
+    @ApiModelProperty(value = "creation date of the note")
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     @Column(nullable = false)
     private long dateCreation;
 
-    @ApiModelProperty(value = "update date of Axe")
+    @ApiModelProperty(value = "update date of the note")
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     @Column(nullable = false)
     private long dateMiseAJour;
