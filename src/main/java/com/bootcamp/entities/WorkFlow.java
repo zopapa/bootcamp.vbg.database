@@ -8,27 +8,29 @@ import javax.persistence.*;
 @Entity
 public class WorkFlow {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @ApiModelProperty(value = "Id of the Etape", required = true)
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     private int id;
 
     @ApiModelProperty(value = "Id of the Etape", required = true)
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
+    @Column(nullable = false)
     private int idPlainte;
 
     @ApiModelProperty(value = "Id of the Etape", required = true)
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
+    @Column(nullable = false)
     private int idEtape;
 
     @ApiModelProperty(value = "creation date of Axe")
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
-    @Column(nullable = false)
+    @Column
     private long dateCreation;
 
     @ApiModelProperty(value = "update date of Axe")
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
-    @Column(nullable = false)
+    @Column
     private long dateMiseAJour;
 
     public int getId() {

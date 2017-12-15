@@ -23,7 +23,7 @@ public class Note implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(nullable = false)
+    @Column
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     private int userId;
 
@@ -33,12 +33,12 @@ public class Note implements Serializable {
 
     @ApiModelProperty(value = "creation date of the note")
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
-    @Column(nullable = false)
+    @Column
     private long dateCreation;
 
     @ApiModelProperty(value = "update date of the note")
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
-    @Column(nullable = false)
+    @Column
     private long dateMiseAJour;
 
 

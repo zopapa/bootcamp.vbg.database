@@ -20,7 +20,7 @@ import javax.persistence.*;
 public class Media implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     private int id;
 
@@ -31,7 +31,7 @@ public class Media implements Serializable {
 
 
     @Lob
-    @Column(name = "type", length = 45, nullable = false)
+    @Column(name = "type",  nullable = false)
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     private String type;
 
@@ -42,12 +42,12 @@ public class Media implements Serializable {
 
     @ApiModelProperty(value = "creation date of Axe")
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
-    @Column(nullable = false)
+    @Column
     private long dateCreation;
 
     @ApiModelProperty(value = "update date of Axe")
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
-    @Column(nullable = false)
+    @Column
     private long dateMiseAJour;
 
 

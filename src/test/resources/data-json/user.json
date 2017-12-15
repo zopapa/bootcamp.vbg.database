@@ -1,0 +1,43 @@
+[
+    {
+        "login": "toto",
+        "password": "ff",
+        "nom": "archange",
+        "email": "archange@gmail.com",
+        "numero": 97845152,
+        "role": "admin",
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+    {
+        "login": "papa",
+        "password": "fdw",
+        "nom": "archange",
+        "email": "archange@gmail.com",
+        "numero": 97845152,
+        "role": "invite",
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+        {
+        "login": "titi",
+        "password": "fcf",
+        "nom": "archange",
+        "email": "archange@gmail.com",
+        "numero": 97845152,
+        "role": "admin",
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+    {
+        "login": "mimi",
+        "password": "ffw",
+        "nom": "archange",
+        "email": "archange@gmail.com",
+        "numero": 97845152,
+        "role": "invite",
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    }
+
+]

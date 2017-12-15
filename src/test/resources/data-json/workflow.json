@@ -1,0 +1,68 @@
+[
+    {
+        "idPlainte": 1,
+        "idEtape": 1,
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+    {
+        "idPlainte": 2,
+        "idEtape": 1,
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+        {
+        "idPlainte": 3,
+        "idEtape": 2,
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+    {
+        "idPlainte": 4,
+        "idEtape": 3,
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+        {
+        "idPlainte": 2,
+        "idEtape": 1,
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+    {
+        "idPlainte": 2,
+        "idEtape": 2,
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    }
+
+
+
+
+
+,
+        {
+        "idPlainte": 5,
+        "idEtape": 2,
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+    {
+        "idPlainte": 5,
+        "idEtape": 1,
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+        {
+        "idPlainte": 5,
+        "idEtape": 2,
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    },
+    {
+        "idPlainte": 5,
+        "idEtape": 3,
+        "dateCreation": "1511890346",
+        "dateMiseAJour": "1511890346"
+    }
+]

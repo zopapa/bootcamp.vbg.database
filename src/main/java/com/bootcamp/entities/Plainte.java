@@ -10,41 +10,37 @@ public class Plainte {
 
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(nullable = false)
+    @Column
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     private long longitude;
 
-    @Column(nullable = false)
+    @Column
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
-    private long lattitude;
+    private long latitude;
 
-    @Column(nullable = false)
+    @Column
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     private boolean etatValidation;
 
-    @Column(nullable = false)
+    @Column
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     private String contenu;
 
     @Column(nullable = false)
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
-    private String etapes;
-
-    @Column(nullable = false)
-    @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
     private String reference;
 
-    @ApiModelProperty(value = "creation date of Axe")
+    @ApiModelProperty(value = "Creation date of the issue")
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
-    @Column(nullable = false)
+    @Column
     private long dateCreation;
 
     @ApiModelProperty(value = "update date of Axe")
     @NativeQueryResultColumn(columnType = NativeQueryResultColumn.COLUMNTYPE.SIMPLE)
-    @Column(nullable = false)
+    @Column
     private long dateMiseAJour;
 
     @Column
@@ -95,11 +91,11 @@ public class Plainte {
     }
 
     public long getLattitude() {
-        return lattitude;
+        return latitude;
     }
 
-    public void setLattitude(long lattitude) {
-        this.lattitude = lattitude;
+    public void setLattitude(long latitude) {
+        this.latitude = latitude;
     }
 
     public boolean isEtatValidation() {
@@ -116,14 +112,6 @@ public class Plainte {
 
     public void setContenu(String contenu) {
         this.contenu = contenu;
-    }
-
-    public String getEtapes() {
-        return etapes;
-    }
-
-    public void setEtapes(String etapes) {
-        this.etapes = etapes;
     }
 
     public String getReference() {
